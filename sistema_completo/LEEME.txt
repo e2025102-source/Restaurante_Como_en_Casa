@@ -1,0 +1,35 @@
+COMO EN CASA - SISTEMA DE RESTAURANTE CON MYSQL (XAMPP)
+
+FUNCIONES
+- Página original restaurante.html con accesos a iniciar sesión, registro y tienda.
+- Registro público de clientes (el rol cliente se asigna en el servidor; el formulario no permite elegir administrador).
+- Inicio de sesión con password_hash/password_verify y sesiones.
+- Área privada de administrador: resumen, CRUD de productos, listado de clientes, pedidos y métodos de pago/envío.
+- Área de cliente: menú, carrito, checkout, método de envío, método de pago y consulta de pedidos.
+- Los precios se vuelven a consultar desde MySQL al confirmar el pedido; no se confía en el precio enviado por el navegador.
+
+INSTALACIÓN
+1. Copia la carpeta como_en_casa_sistema dentro de C:\xampp\htdocs\
+2. En XAMPP enciende Apache y MySQL.
+3. Abre http://localhost/phpmyadmin
+4. Importa el archivo base_datos.sql (o copia su contenido en la pestaña SQL y ejecútalo).
+5. Revisa conexion.php. Por defecto usa:
+   servidor: localhost
+   usuario MySQL: root
+   contraseña MySQL: (vacía)
+   base de datos: como_en_casa
+   Si tu profesor creó la base con otro nombre, cambia $dbname en conexion.php para que coincida con el nombre usado en MySQL.
+6. Abre una sola vez: http://localhost/como_en_casa_sistema/crear_admin.php
+   Crea TU usuario y contraseña de administrador. Este instalador se bloquea automáticamente cuando ya existe un administrador.
+7. Después entra por http://localhost/como_en_casa_sistema/index.php
+8. Página principal: http://localhost/como_en_casa_sistema/restaurante.html
+
+IMÁGENES
+Copia tu carpeta original "imagenes" dentro de esta carpeta, al mismo nivel que restaurante.html. La tienda usa rutas como imagenes/plato1.jpg.
+
+IMPORTANTE
+- No abras PHP haciendo doble clic. Usa siempre http://localhost/...
+- No compartas tu contraseña de administrador.
+- Los clientes nuevos siempre se crean con rol cliente.
+- Para un sitio publicado en Internet, usa HTTPS, credenciales MySQL propias (no root), protección CSRF, validación adicional y elimina/protege el instalador de administrador tras configurarlo.
+- La reserva de mesa que ya estaba en tu HTML original sigue siendo visual/de demostración; este proyecto guarda en MySQL los pedidos de comida descritos aquí.
