@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#7a0c0c">
+<meta name="description" content="Carta completa del restaurante Como en Casa: entradas, platos de fondo, bebidas y postres.">
+<title>Como en Casa | Nuestra carta completa</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<style>
+:root{--rojo-900:#4d0505;--rojo-800:#6b0808;--rojo-700:#8b0000;--rojo-600:#a80f0f;--rojo-500:#c0392b;--naranja:#e67e22;--crema:#fdf8f1;--blanco:#fff;--texto:#2b211d;--texto-suave:#6f625b;--borde:#eadfd2;--sombra:0 10px 30px rgba(72,32,12,.08);--radio:14px}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;font-family:"Segoe UI",system-ui,-apple-system,Arial,sans-serif;background:var(--crema);color:var(--texto);line-height:1.5}
+a{color:var(--rojo-700);text-decoration:none}
+.topbar{background:var(--rojo-700);color:#fff;padding:9px 4%;display:flex;justify-content:space-between;align-items:center;gap:15px;font-size:12px}
+.topbar strong{color:var(--naranja)}
+.cabecera{background:#fff;padding:18px 4%;display:flex;align-items:center;justify-content:space-between;gap:20px;border-bottom:1px solid var(--borde)}
+.logo{display:flex;align-items:center;gap:12px}
+.logo-icono{width:48px;height:48px;border-radius:13px;background:var(--rojo-700);color:var(--naranja);display:flex;justify-content:center;align-items:center;font-size:26px;font-weight:700}
+.logo h1{color:var(--rojo-700);font-size:26px;margin:0;line-height:1.2}
+.logo p{color:var(--texto-suave);font-size:11px;letter-spacing:1px;margin:0}
+.cabecera-info{text-align:right;font-size:13px;color:var(--texto-suave)}
+.cabecera-info strong{color:var(--rojo-700)}
+.hero{background:linear-gradient(120deg,#4d0505,#8b0000 55%,#c0392b);color:#fff;padding:70px 6%;text-align:center}
+.hero h1{font-size:clamp(26px,4vw,44px);margin:0 0 12px}
+.hero p{font-size:16px;opacity:.92;margin:0 auto 24px;max-width:640px}
+.boton{display:inline-block;border:0;border-radius:5px;padding:13px 22px;background:var(--naranja);color:#280505;font-size:13px;font-weight:700;cursor:pointer}
+.boton:hover{background:#fff}
+.contenido{width:92%;max-width:1250px;margin:auto;padding:60px 0}
+.seccion{margin-bottom:56px}
+.seccion-titulo{text-align:center;margin-bottom:28px}
+.seccion-titulo span{color:var(--rojo-500);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:2px}
+.seccion-titulo h2{color:var(--rojo-700);font-size:28px;margin:8px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:20px}
+.card{background:#fff;border:1px solid var(--borde);border-radius:var(--radio);padding:20px;box-shadow:var(--sombra);transition:.25s}
+.card:hover{transform:translateY(-4px);border-color:var(--naranja)}
+.card .categoria{font-size:10px;color:var(--rojo-500);font-weight:700;text-transform:uppercase;letter-spacing:1px}
+.card h3{font-size:16px;margin:8px 0;color:var(--rojo-700)}
+.card p{font-size:12px;color:var(--texto-suave);margin:0 0 12px;min-height:34px}
+.card .precio{font-size:19px;font-weight:700;color:var(--rojo-500)}
+.footer{background:#1c0303;color:#d9c5c5;padding:35px 4%;text-align:center;font-size:12px}
+@media(max-width:700px){.cabecera{flex-direction:column;text-align:center}.cabecera-info{text-align:center}.topbar{flex-direction:column;text-align:center}.grid{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="topbar">
+    <div>RESTAURANTE &nbsp;|&nbsp; <strong>COMO EN CASA</strong></div>
+    <div>Carta completa &middot; Saz&oacute;n y tradici&oacute;n familiar</div>
+</header>
+<div class="cabecera">
+    <a class="logo" href="index.html">
+        <span class="logo-icono">C</span>
+        <span><h1>Como en Casa</h1><p>SAZ&Oacute;N Y TRADICI&Oacute;N FAMILIAR</p></span>
+    </a>
+    <div class="cabecera-info"><strong>El sabor aut&eacute;ntico de la comida casera</strong><p>Almuerzos, cenas, men&uacute; ejecutivo y delivery</p></div>
+</div>
+<section class="hero">
+    <h1>Nuestra carta</h1>
+    <p>Platos preparados al momento con ingredientes frescos y el saz&oacute;n de siempre.</p>
+    <a class="boton" href="#carta">Ver la carta</a>
+</section>
+<main class="contenido" id="carta">
+    <section class="seccion">
+        <div class="seccion-titulo"><span>PARA EMPEZAR</span><h2>Entradas</h2></div>
+        <div class="grid">
+            <article class="card"><span class="categoria">Entrada</span><h3>Causa lime&ntilde;a</h3><p>Papa amarilla con aj&iacute; y pollo</p><span class="precio">S/ 12.00</span></article>
+            <article class="card"><span class="categoria">Entrada</span><h3>Papa a la huanca&iacute;na</h3><p>Papa sancochada con crema de aj&iacute;</p><span class="precio">S/ 10.00</span></article>
+            <article class="card"><span class="categoria">Entrada</span><h3>Anticuchos</h3><p>Brochetas de coraz&oacute;n a la parrilla</p><span class="precio">S/ 15.00</span></article>
+            <article class="card"><span class="categoria">Entrada</span><h3>Ensalada c&eacute;sar</h3><p>Lechuga, pollo, crotones y parmesano</p><span class="precio">S/ 14.00</span></article>
+        </div>
+    </section>
+    <section class="seccion">
+        <div class="seccion-titulo"><span>PLATOS DE FONDO</span><h2>Principales</h2></div>
+        <div class="grid">
+            <article class="card"><span class="categoria">Plato de fondo</span><h3>Lomo saltado</h3><p>Lomo de res salteado con papas fritas</p><span class="precio">S/ 22.00</span></article>
+            <article class="card"><span class="categoria">Plato de fondo</span><h3>Aj&iacute; de gallina</h3><p>Pollo deshilachado en crema de aj&iacute;</p><span class="precio">S/ 18.00</span></article>
+            <article class="card"><span class="categoria">Plato de fondo</span><h3>Arroz con pollo</h3><p>Arroz verde con presa de pollo</p><span class="precio">S/ 16.00</span></article>
+            <article class="card"><span class="categoria">Plato de fondo</span><h3>Tallar&iacute;n saltado</h3><p>Tallar&iacute;n de res al estilo chifa</p><span class="precio">S/ 20.00</span></article>
+            <article class="card"><span class="categoria">Plato de fondo</span><h3>Pollo a la brasa 1/4</h3><p>Cuarto de pollo con papas y ensalada</p><span class="precio">S/ 19.00</span></article>
+            <article class="card"><span class="categoria">Plato de fondo</span><h3>Seco de res</h3><p>Guiso de res con arroz y frijoles</p><span class="precio">S/ 21.00</span></article>
+            <article class="card"><span class="categoria">Plato de fondo</span><h3>Chaufa de pollo</h3><p>Arroz chaufa con pollo y huevo</p><span class="precio">S/ 17.00</span></article>
+            <article class="card"><span class="categoria">Plato de fondo</span><h3>Pescado a la plancha</h3><p>Filete de pescado con guarnici&oacute;n</p><span class="precio">S/ 25.00</span></article>
+        </div>
+    </section>
+    <section class="seccion">
+        <div class="seccion-titulo"><span>BEBIDAS</span><h2>Para refrescar</h2></div>
+        <div class="grid">
+            <article class="card"><span class="categoria">Bebida</span><h3>Chicha morada (jarra)</h3><p>Jarra de 1 litro</p><span class="precio">S/ 10.00</span></article>
+            <article class="card"><span class="categoria">Bebida</span><h3>Limonada frozen</h3><p>Vaso de 500 ml</p><span class="precio">S/ 9.00</span></article>
+            <article class="card"><span class="categoria">Bebida</span><h3>Inca Kola</h3><p>Botella personal</p><span class="precio">S/ 5.00</span></article>
+            <article class="card"><span class="categoria">Bebida</span><h3>Agua mineral</h3><p>Botella de 625 ml</p><span class="precio">S/ 3.00</span></article>
+            <article class="card"><span class="categoria">Bebida</span><h3>Caf&eacute; pasado</h3><p>Taza de caf&eacute;</p><span class="precio">S/ 4.00</span></article>
+        </div>
+    </section>
+    <section class="seccion">
+        <div class="seccion-titulo"><span>POSTRES</span><h2>Dulces caseros</h2></div>
+        <div class="grid">
+            <article class="card"><span class="categoria">Postre</span><h3>Suspiro a la lime&ntilde;a</h3><p>Postre tradicional</p><span class="precio">S/ 8.00</span></article>
+            <article class="card"><span class="categoria">Postre</span><h3>Arroz con leche</h3><p>Porci&oacute;n individual</p><span class="precio">S/ 7.00</span></article>
+            <article class="card"><span class="categoria">Postre</span><h3>Mazamorra morada</h3><p>Porci&oacute;n individual</p><span class="precio">S/ 7.00</span></article>
+            <article class="card"><span class="categoria">Postre</span><h3>Tortilla de raya</h3><p>Postre casero</p><span class="precio">S/ 8.00</span></article>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <p><strong>Como en Casa</strong> &middot; Saz&oacute;n y tradici&oacute;n &middot; Atenci&oacute;n de lunes a domingo</p>
+    <p>Pedidos en sal&oacute;n, para llevar y delivery.</p>
+    <p style="margin-top:10px"><a href="index.html" style="color:#e67e22">Volver a la p&aacute;gina principal</a></p>
+</footer>
+</body>
+</html>

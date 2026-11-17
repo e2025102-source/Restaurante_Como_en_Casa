@@ -1,0 +1,16 @@
+# Android / Gradle
+android/build/
+android/app/build/
+android/.gradle/
+android/local.properties
+**/build/
+**/.gradle/
+
+# IDE
+.idea/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log

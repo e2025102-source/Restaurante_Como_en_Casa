@@ -6,6 +6,15 @@ El sistema permite a los clientes registrarse, iniciar sesión, consultar el men
 
 ---
 
+## Sitio web en línea (GitHub Pages)
+
+- **Página principal:** https://e2025102-source.github.io/Restaurante_Como_en_Casa/
+- **Carta completa:** https://e2025102-source.github.io/Restaurante_Como_en_Casa/carta.html
+
+> GitHub Pages solo publica archivos estáticos (HTML, CSS, JavaScript). El sistema PHP completo se ejecuta localmente con XAMPP (ver la sección *Instalación local* más abajo).
+
+---
+
 ## Tecnologías utilizadas
 
 | Capa | Tecnología |
@@ -50,7 +59,21 @@ El sistema permite a los clientes registrarse, iniciar sesión, consultar el men
 ```
 Restaurante_Como_en_Casa/
 ├── README.md
-├── sistema_completo/            # Sistema PHP + MySQL completo
+├── docs/                        # Sitio estático publicado en GitHub Pages
+│   ├── index.html               # Portada del restaurante
+│   ├── carta.html               # Carta completa (entradas, platos, bebidas, postres)
+│   ├── imagenes/                # Imágenes de la portada
+│   └── favicon.svg
+├── sistema_gestion/             # Sistema de gestión PHP + MySQL + app Android
+│   ├── index.php                # Login del panel de gestión
+│   ├── menu.php                 # Carta pública (requiere PHP)
+│   ├── api.php                  # API interna
+│   ├── assets/                  # CSS, JS e imágenes
+│   ├── app/                     # Clases PHP (Auth, Database, modelos)
+│   ├── config/config.php        # Configuración de la base de datos
+│   ├── database/                # Esquema, datos de demostración y módulo de menú del día
+│   └── android/                 # Aplicación Android de registros y reportes
+├── sistema_completo/            # Sistema PHP + MySQL completo (versión anterior)
 │   ├── index.php                # Login
 │   ├── registrar.php            # Registro de clientes
 │   ├── login_registrar.php      # Lógica de autenticación
